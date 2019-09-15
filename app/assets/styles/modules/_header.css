@@ -2,9 +2,10 @@
 
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0% 100%);
-    
+    margin-bottom: -5vw;
+   
     &__photo{
-     height: 80vh;
+     height: 90vh;
      background-image: url('../../assets/images/header-photo-small.jpg');
      background-repeat: no-repeat;
      background-size: cover;

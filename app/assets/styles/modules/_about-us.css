@@ -1,0 +1,24 @@
+.about-us{
+    padding-top: 5vw;
+    padding-bottom: 1px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-align: center;
+
+    &__headline{
+        
+        padding-bottom: 10px;
+        color: $gold;
+        border-bottom: .5px solid #e3e0a1;
+        font-weight: normal;
+         
+
+        @mixin atExtraLarge{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 0; 
+        }
+    }
+}

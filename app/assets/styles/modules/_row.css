@@ -1,0 +1,43 @@
+.row{
+
+    display: flex;
+    flex-wrap:wrap;
+   
+ 
+    /* @mixin atLarge {
+         &--gutters>div{
+             padding-right: 65px;     
+         } 
+         &--gutters{
+             margin-right: -65px;
+         }
+         &__large-col-4{
+             width: 33.33%;   
+         }
+         &__large-col-8{
+             width: 66.66%;
+         }
+     }  */
+     &__col{
+         width: 100%;
+     
+         @mixin atLarge {
+             &--large-6{
+             width: 50%;
+             }
+         }
+         /* @mixin atLarge {
+             &--large-4{
+             width: 33.33%;
+             }
+             &--large-8{
+             width: 66.66%;
+             }
+         }
+         @mixin atExtraLarge {
+             &--extra-large-2{
+             width: 16.66%;
+             }
+         } */
+     } 
+}

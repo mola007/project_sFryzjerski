@@ -2,18 +2,42 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
- 
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
 
   <title>Salon Fryzjerski</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
 
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
+
   <link rel = "stylesheet" href = "temp/styles/styles.css">
 </head>
 <body>
 <header class = "header">
-  <nav></nav>
+ 
+  <nav class = "site-nav">
+
+    <div class = "site-nav__menu-icon">
+      <div class = "site-nav__menu-icon-middle"></div>
+    </div>
+
+    <div class = "site-nav__nav-content">
+    <div class = "wrapper">
+    <div class = "site-nav__contact-social-section">
+     <p><strong>Email: </strong>email@email.pl <strong>Tel:</strong> 999999999</p>
+     <p>facebook instagram google</p>
+    </div>
+    <ul class = "site-nav__list">
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Home</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">O nas</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Oferta</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Galeria</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Cennik</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Kontakt</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
 
   <div class = "header__photo"></div>
   <!-- <div class = "header__txt-overlay">
@@ -33,8 +57,46 @@
   </div> -->
 </header>
 <main>
-  <section id = "about-us"></section>
-  <section id = "offer"></section>
+  <section class = "about-us">
+    <div class = "site-section site-section--no-margin-top">
+    <div class = "wrapper wrapper--width-extraLarge-80vw">
+    <h2 class = "about-us__headline">W kilku zdaniach o naszym salonie...</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  </div>
+  </section>
+  <section class = "offer">
+        <div class = "row">
+          <div class = "row__col row__col--large-6 offer__left">
+
+          <div class = "offer__img-wrapper">
+            <picture>
+              <img srcset = "assets/images/hairstyle-large-screen.jpg 384w, assets/images/hairstyle-large-screen.jpg 768w," alt = "hairstyle"/>  
+            </picture> 
+          </div>
+          
+          <div class = "offer__img-wrapper">
+            <picture>
+              <img srcset = "assets/images/hairstyle-large-screen.jpg 384w, assets/images/hairstyle-large-screen.jpg 768w," alt = "hairstyle"/>  
+            </picture> 
+          </div>
+        </div>
+        
+          <div class = "row__col row__col--large-6 offer__right">
+          <h2 class = "headline headline--gold headline--margin-top-0 headline--larger-font  headline--center">Nasza oferta</h2>
+          <ul class = "offer__list">
+            <li class = "offer__list-item"> Lorem ipsum dolor sit amet</li>
+            <li class = "offer__list-item"> Lorem ipsum dolor sit amet, consectetur adipiscing eli</li>
+            <li class = "offer__list-item"> Lorem ipsum</li>
+            <li class = "offer__list-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+            <li class = "offer__list-item"> Consectetur adipiscing elit</li>
+            <li class = "offer__list-item"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+            <li class = "offer__list-item"> Excepteur sint occaecat cupidatat non proident</li>
+          </ul>
+          </div>
+        </div>
+  
+  </section>
   <section id = "last-work"></section>
   <section id = "price"></section>
 </main>
