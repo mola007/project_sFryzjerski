@@ -1,6 +1,11 @@
 .wrapper{
     padding: 0 1.25rem;
 
+
+    &--larger-padding-x{
+        padding: 0 3.125rem;
+    }
+
     @mixin atExtraLarge{
         &--width-extraLarge-80vw{
             max-width: 80vw;

@@ -371,7 +371,7 @@ img{
 }
 
 .site-section{
-    padding: 2.5rem 0;
+    padding: 3.125rem 0;
 }
 
 .site-section--no-margin-top{
@@ -381,6 +381,10 @@ img{
 .wrapper{
     padding: 0 1.25rem;    
 }
+
+.wrapper--larger-padding-x{
+        padding: 0 3.125rem;
+    }
 
 @media (min-width: 1200px){
         .wrapper--width-extraLarge-80vw{
@@ -453,6 +457,10 @@ img{
 
 .headline--margin-top-0{
         margin-top: 0;
+    }
+
+.headline--margin-bottom-0{
+        margin-bottom: 0;
     }
 
 .header{
@@ -651,8 +659,49 @@ img{
     font-weight: 300;
     line-height: 1.5;
     text-indent: 30px;
-    text-align: center;
 }
+
+.about-us__imgs{
+        display: flex;
+   
+        justify-content: center;
+
+       
+    }
+
+.about-us img{
+        box-shadow: 0px 2px 4px rgba(0,0,0,.7);
+    }
+
+.about-us__img-wrapper{
+      max-width: 35%;
+
+      
+    }
+
+.about-us__img-wrapper:nth-child(1){
+      
+        margin-top: 50px;
+        position: relative;
+        z-index: 3;
+         
+       }
+
+.about-us__img-wrapper:nth-child(2){
+       
+       margin-left: -50px;
+       position: relative;
+       z-index: 2;
+        
+      }
+
+.about-us__img-wrapper:nth-child(3){
+   
+        margin-left: -80px;
+        margin-top: 30px;
+
+         
+       }
 
 .about-us__headline{
         
@@ -660,6 +709,7 @@ img{
         color: #7d7546;
         border-bottom: .5px solid #e3e0a1;
         font-weight: normal;
+        text-align: center;
     }
 
 @media (min-width: 1200px){
@@ -682,7 +732,7 @@ img{
 
 .offer__left{
         background: rgb(227,227,227); 
-        padding: 2.5rem 1.125rem;
+        padding:  3.125rem 1.125rem;
         display: flex;
         justify-content: center;
     }
@@ -701,7 +751,7 @@ img{
     }
 
 .offer__right{
-        padding: 2.5rem 1.125rem;
+        padding: 3.125rem 1.125rem;
     }
 
 .offer__list{
@@ -711,3 +761,57 @@ img{
 .offer__list-item{
         margin-bottom: 15px;
     }
+
+.contact{
+   
+
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact__map-wrapper{
+    
+     
+      height: 300px;
+  
+      position: relative;
+      z-index: -1;
+    }
+
+@media (min-width: 992px){
+
+.contact{
+
+    /* background-image: url('../../assets/images/test.jpg');  */
+}
+    }
+
+.contact__widget-section{
+      background: #e5e8b5;
+   
+      max-width: 85%;
+     
+      padding: 1px 0;
+      box-shadow: 0px 2px 4px rgba(0,0,0,.7);
+
+    }
+
+.contact__widgets{
+      display: flex;
+ 
+    }
+
+.contact__widget{
+      width: 33.33%;
+     
+      text-align: center;
+
+    }
+
+iframe{
+ width: 100%;
+ height: 100%;
+  
+}
