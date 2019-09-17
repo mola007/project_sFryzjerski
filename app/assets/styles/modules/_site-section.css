@@ -2,10 +2,19 @@
     /* padding: 2.5rem 0; */
     padding: 1rem 0; 
 
+    &--more-padding-at-top{
+        padding-top: 3.125rem;
+    }
+
+    &--double-padding-at-top{
+        padding-top: 6.25rem;
+    }
 
     &--more-padding-at-bottom{
-        padding-bottom: 2.5rem;
+        padding-bottom: 3.125rem;
     }
+
+   
   
 
 

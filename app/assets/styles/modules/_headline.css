@@ -12,9 +12,18 @@
     &--larger-font{
         font-size: 1.875rem;
     }
-    
+
+    &--font-65px{
+        font-size: 4.0625rem;
+    }
+
+  
     &--gold{
         color: $gold;
+    }
+
+    &--white{
+        color: #fff;
     }
 
     &--margin-top-0{

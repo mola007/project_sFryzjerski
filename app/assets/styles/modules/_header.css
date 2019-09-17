@@ -1,8 +1,6 @@
 .header{
 
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0% 100%);
-    margin-bottom: -5vw;
    
     &__photo{
      height: 90vh;
@@ -10,6 +8,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
+      background-attachment: fixed; 
 
      @mixin atSmall{
         background-image: url('../../assets/images/header-photo-medium.jpg');
@@ -24,25 +23,23 @@
      }
     }
 
-    /* &__txt-overlay{
-        font-size: 20px;
-        box-shadow: 0px 0px 5px $gold;
-        padding: 15px;
-        padding-right: 50px;
-        text-align:right;
-        color: rgba(0,0,0,.7);
-        min-width: 500px;
-       
-       position: absolute;
-       background: rgba(255,255,255, .7);
-       right: 0;
-     
-       bottom: 50%;
-       transform: translateY(50%);
- 
-       h3{
-           color: $gold;
-           font-size: 25px;
-       }
-    } */
+    &__txt-overlay{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);  
+    }
+  
+    &__overlay-txt-top{
+      font-family: 'Gloria Hallelujah', cursive;
+      text-shadow: 1px 2px 3px rgba(0,0,0,.7);
+   }
+
+   &__overlay-txt-bottom{
+      font-size: 1.875rem;
+      margin-top: 15px;
+      font-weight: 700;
+      color: rgba(0,0,0,.9);
+   }
 }
