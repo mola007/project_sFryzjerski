@@ -371,8 +371,13 @@ img{
 }
 
 .site-section{
-    padding: 3.125rem 0;
+    /* padding: 2.5rem 0; */
+    padding: 1rem 0;
 }
+
+.site-section--more-padding-at-bottom{
+        padding-bottom: 2.5rem;
+    }
 
 .site-section--no-margin-top{
        margin-top: 0;
@@ -524,14 +529,166 @@ img{
 
 .site-nav{
 
-   
-
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(255,255,255,.9);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+
 }
+
+@media (min-width: 768px){
+
+.site-nav{
+        background-color: rgba(255,255,255,.7)
+
+}
+
+        .site-nav__menu-icon{
+            display: none;
+        }
+
+        .site-nav__nav-content{
+            /* display: block; */
+        }
+    }
+
+.site-nav__contact-social-section{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+@media (min-width: 768px){
+
+.site-nav__contact-social-section{
+        flex-direction: row;
+        justify-content: space-between
+   
+}
+    }
+
+.site-nav__contact-section{ 
+    order: 2;
+}
+
+@media (min-width: 768px){
+
+.site-nav__contact-section{
+        order: 1
+}
+    }
+
+.site-nav__contact-section strong{
+        color: #7d7546;
+    }
+
+.site-nav__contact-section strong:nth-child(2){
+        padding-left: 20px;
+        }
+
+.site-nav__social-sections{
+    display: flex;
+    padding-bottom: 10px;
+    order: 1;
+  }
+
+@media (min-width: 768px){
+
+.site-nav__social-sections{
+      order: 2;
+      padding-bottom: 0px
+  }
+    }
+
+.site-nav__social-section{
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 5px;
+    padding-top: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid #7d7546;
+    color: #7d7546;
+    transition: all .2s ease-out;
+ }
+
+.site-nav__social-section:hover{
+        background-color: #7d7546;
+        color: white;
+    }
+
+.site-nav__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+
+.site-nav__list{
+        flex-direction: row;
+        justify-content: center
+}
+    }
+
+.site-nav__item{
+   padding-top: 2.5rem;
+    width: 50%;
+}
+
+@media (min-width: 576px){
+
+.site-nav__item{
+        width: 33.33%
+}
+    }
+
+@media (min-width: 768px){
+
+.site-nav__item{
+       width: auto;
+       padding: 0 1.25rem;
+       padding-top: 1.25rem
+}
+    }
+
+.site-nav__link{
+    position: relative;
+    color: rgba(0,0,0,.8);
+    text-decoration: none;   
+    font-weight: 700;
+    font-size: 1.25rem;
+      
+    }
+
+.site-nav__link::before{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        background: #7d7546;
+        left: -10%;
+        top: 50%;
+        transform: translateY(-1px);
+        transform-origin: 0 0;
+        transition: all .2s ease-out;
+        }
+
+.site-nav__link:hover{
+            color: #7d7546;     
+        }
+
+@media (min-width: 768px){
+        .site-nav__link:hover:before{
+            width: 120%;
+        }
+    }
 
 .site-nav__menu-icon{
         width: 30px;
@@ -579,77 +736,6 @@ img{
             transform-origin: 0 100%;
             transition: transform .3s ease-out;
             box-shadow: 0 1px 2px rgba(0,0,0,.3);
-        }
-
-.site-nav__nav-content{
-        display: none;
-    }
-
-@media (min-width: 768px){
-
-        .site-nav__menu-icon{
-            display: none;
-        }
-
-        .site-nav__nav-content{
-            display: block;
-        }
-    }
-
-.site-nav__contact-social-section{
-    display: flex;
-    justify-content: space-between;
-    color: rgba(0,0,0,.7);
-}
-
-.site-nav__contact-social-section strong{
-        color: #7d7546;
-    }
-
-.site-nav__contact-social-section strong:nth-child(2){
-        padding-left: 20px;
-        }
-
-.site-nav__list{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.site-nav__item{
-
-    padding: 20px 40px 40px 20px;
-}
-
-.site-nav__link{
-    position: relative;
-    color: rgba(0,0,0,.8);
-    text-decoration: none;   
-    font-weight: 700;
-    font-size: 1.125rem;   
-    }
-
-.site-nav__link::before{
-        content: "";
-        position: absolute;
-        height: 2px;
-        width: 0;
-        background: #7d7546;
-        left: -10%;
-        top: 50%;
-        transform: translateY(-1px);
-        transform-origin: 0 0;
-        transition: all .2s ease-out;
-        }
-
-.site-nav__link:hover{
-            color: #7d7546;     
-        }
-
-.site-nav__link:hover:before{
-        width: 120%;
         }
 
 .about-us{

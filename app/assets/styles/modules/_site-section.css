@@ -1,6 +1,14 @@
 .site-section{
-    padding: 3.125rem 0;
+    /* padding: 2.5rem 0; */
+    padding: 1rem 0; 
+
+
+    &--more-padding-at-bottom{
+        padding-bottom: 2.5rem;
+    }
   
+
+
 
     &--no-margin-top{
        margin-top: 0;
