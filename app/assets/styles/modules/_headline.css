@@ -1,15 +1,11 @@
-.headline{
-
+.headline{  
     font-weight: normal;
-
-   
-
 
     &--center{
         text-align: center;
     }
     
-    &--larger-font{
+    &--font-30px{
         font-size: 1.875rem;
     }
 
