@@ -26,8 +26,7 @@
     @mixin atMedium{
         flex-direction: row;
         justify-content: space-between;
-    }
-   
+    } 
 }
 
 &__contact-section{ 
@@ -64,7 +63,6 @@
     margin: 0 5px;
     padding-top: 5px;
     border-radius: 50%;
-    overflow: hidden;
     border: 1.5px solid $gold;
     color: $gold;
     transition: all .2s ease-out;
@@ -89,7 +87,7 @@
     }
 }
 &__item{
-   padding-top: 2.5rem;
+    padding: 1.25rem;
     width: 50%;
 
     @mixin atSmall{
@@ -97,9 +95,7 @@
      }
 
     @mixin atMedium{
-       width: auto;
-       padding: 0 1.25rem;
-       padding-top: 1.25rem;
+        width: auto;
     }
 }
 
@@ -110,7 +106,6 @@
     font-weight: 700;
     font-size: 1.25rem;
    
-  
         &::before{
         content: "";
         position: absolute;
@@ -119,7 +114,7 @@
         background: $gold;
         left: -10%;
         top: 50%;
-        transform: translateY(-1px);
+        transform: translateY(-50%);
         transform-origin: 0 0;
         transition: all .2s ease-out;
         }
@@ -132,8 +127,7 @@
         &:hover:before{
             width: 120%;
         }
-     }
-      
+     }    
     }
 
     &__menu-icon{

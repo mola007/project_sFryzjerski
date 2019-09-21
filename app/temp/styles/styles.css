@@ -486,8 +486,8 @@ img{
         font-size: 1.875rem;
     }
 
-.headline--font-65px{
-        font-size: 4.0625rem;
+.headline--font-75px{
+        font-size: 4.6875rem;
     }
 
 .headline--gold{
@@ -550,7 +550,8 @@ img{
     }
 
 .header__overlay-txt-top{
-      font-family: 'Gloria Hallelujah', cursive;
+    
+      font-family: 'Patrick Hand', cursive; 
       text-shadow: 1px 2px 3px rgba(0,0,0,.7);
    }
 
@@ -589,16 +590,14 @@ img{
 
 .site-nav__contact-social-section{
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column; 
 }
 
 @media (min-width: 768px){
 
 .site-nav__contact-social-section{
         flex-direction: row;
-        justify-content: space-between
-   
+        justify-content: space-between 
 }
     }
 
@@ -643,7 +642,6 @@ img{
     margin: 0 5px;
     padding-top: 5px;
     border-radius: 50%;
-    overflow: hidden;
     border: 1.5px solid #7d7546;
     color: #7d7546;
     transition: all .2s ease-out;
@@ -672,7 +670,7 @@ img{
     }
 
 .site-nav__item{
-   padding-top: 2.5rem;
+    padding: 1.25rem;
     width: 50%;
 }
 
@@ -686,9 +684,7 @@ img{
 @media (min-width: 768px){
 
 .site-nav__item{
-       width: auto;
-       padding: 0 1.25rem;
-       padding-top: 1.25rem
+        width: auto
 }
     }
 
@@ -697,8 +693,7 @@ img{
     color: rgba(0,0,0,.8);
     text-decoration: none;   
     font-weight: 700;
-    font-size: 1.25rem;
-      
+    font-size: 1.25rem;    
     }
 
 .site-nav__link::before{
@@ -709,7 +704,7 @@ img{
         background: #7d7546;
         left: -10%;
         top: 50%;
-        transform: translateY(-1px);
+        transform: translateY(-50%);
         transform-origin: 0 0;
         transition: all .2s ease-out;
         }
@@ -774,33 +769,29 @@ img{
 
 .about-us{
   
-   
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.5;
     text-indent: 30px;
-    background: white;
-   -webkit-clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
-           clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
-   margin-top: -5vw;  
-   position: relative;
+    background-color: #7d7546;
+    -webkit-clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
+    margin-top: -5vw;  
+    position: relative;
 }
 
 .about-us::before{
-       /* content: "";
-       display: block;
-       width: 100vw;
-       height: 8px;
-       background: $gold;
-   
-        transform: rotate(-5deg); 
-       transform-origin: 0% 0%; */
-
+       content: "";
+       position: absolute;
+       z-index: -1;
+       top: 8px;
+       width: 100%;
+       left: 0;
+       bottom: 0;    
+       background-color: white;
+       -webkit-clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
+               clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
    }
-
-/*  
-     calc(100% - 5vw)
-    */
 
 .about-us__imgs{
         display: flex;
@@ -808,52 +799,27 @@ img{
         padding-left: 50px; 
     }
 
-/* &__border-top{
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    height: 8px;
-    background: $gold;
-    top: -1%;
-    left: 0;
-  
-    transform: rotate(-2.85deg);
-    transform-origin: 100% 0%;
-  }  */
-
-.about-us__img{
-    
-       
-    }
-
 .about-us img{
         box-shadow: 0px 2px 4px rgba(0,0,0,.7);
     }
 
 .about-us__img-wrapper{
-      max-width: 35%;
-
-      
+      max-width: 35%;  
     }
 
-.about-us__img-wrapper:nth-child(1){
-      
+.about-us__img-wrapper:nth-child(1){ 
         margin-top: 50px;
         position: relative;
-        z-index: 3;
-         
+        z-index: 3;    
        }
 
-.about-us__img-wrapper:nth-child(2){
-       
+.about-us__img-wrapper:nth-child(2){ 
        margin-left: -50px;
        position: relative;
-       z-index: 2;
-        
+       z-index: 2;    
       }
 
 .about-us__img-wrapper:nth-child(3){
-   
         margin-left: -80px;
         margin-top: 30px;
 

@@ -9,11 +9,10 @@
         font-size: 1.875rem;
     }
 
-    &--font-65px{
-        font-size: 4.0625rem;
+    &--font-75px{
+        font-size: 4.6875rem;
     }
 
-  
     &--gold{
         color: $gold;
     }
