@@ -1,6 +1,7 @@
 .header{
 
     position: relative;
+    
    
     &__photo{
      height: 90vh;
@@ -9,6 +10,7 @@
      background-size: cover;
      background-position: center;
       background-attachment: fixed; 
+    
 
      @mixin atSmall{
         background-image: url('../../assets/images/header-photo-medium.jpg');

@@ -1,25 +1,103 @@
+
 .site-nav{
 
-    background-color: rgba(255,255,255,.9);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
+   
+    &__content{
+        background-color: rgba(255,255,255,.9);
+        position: absolute; 
+        z-index: 5;
+        top: 0;
+        right: -100%;
+        width: 100%;  
+        transition: all .3s ease-out;
 
-    @mixin atMedium{
-        background-color: rgba(255,255,255,.7);
-
-        &__menu-icon{
-            display: none;
+        @mixin atMedium{
+            right: 0;
+            background-color: rgba(255,255,255,.7);
         }
 
-        &__nav-content{
-            /* display: block; */
+        &--is-visible{
+            right: 0;
         }
-     
     }
 
+    &__menu-icon{
+        display: block;
+        width: 30px;
+        height: 19px;
+        position: absolute;
+        z-index: 10;
+        top: 20px;
+        right: 20px;   
+        cursor: pointer;
+
+        @mixin atMedium{
+            display: none;        
+        }
+
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80%;
+            height: 2px;
+            background-color: #fff;
+            transform-origin: 0 0;
+            transition: all .3s ease-out;
+            box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        }
+
+        &--open.site-nav__menu-icon::before{
+            width: 100%;
+            background-color: rgba(0,0,0,.7);
+            box-shadow: none;
+         }
+
+        &-middle{
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transition: all .3s ease-out;
+            transform-origin: 0 50%;
+            box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        }
+        &--open>.site-nav__menu-icon-middle{
+            width: 100%;
+            background-color: rgba(0,0,0,.7);
+            box-shadow: none;
+          }
+
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 70%;
+            height: 2px;
+            background-color: #fff;
+            transform-origin: 0 100%;
+            transition: all .3s ease-out;
+            box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        }
+        &--open.site-nav__menu-icon::after{
+            width: 100%;
+            background-color: rgba(0,0,0,.7);
+            box-shadow: none;
+         }
+
+        
+    }
+
+ 
+
 &__contact-social-section{
+    padding: 18px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
 
@@ -73,17 +151,27 @@
     }
  }
 
- &__list{
+ &__list{ 
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    transition: all .3 ease-out;
 
     @mixin atMedium{
         flex-direction: row;
         justify-content: center;   
+
+        &--sticky-header{
+            
+            position: fixed;
+            
+            background-color: rgba(255,255,255,.9);
+            top: 0;
+            width: 100%;
+        }
     }
 }
 &__item{
@@ -99,12 +187,20 @@
     }
 }
 
+
+
 &__link{
     position: relative;
     color: rgba(0,0,0,.8);
     text-decoration: none;   
     font-weight: 700;
     font-size: 1.25rem;
+
+    &--gold{
+     color: $gold; 
+    }
+
+   
    
         &::before{
         content: "";
@@ -122,6 +218,8 @@
         &:hover{
             color: $gold;     
         }
+
+      
     
     @mixin atMedium{
         &:hover:before{
@@ -130,53 +228,9 @@
      }    
     }
 
-    &__menu-icon{
-        width: 30px;
-        height: 19px;
-        position: absolute;
-        z-index: 10;
-        top: 20px;
-        right: 20px;   
-        cursor: pointer;
-
-        &:before{
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 80%;
-            height: 2px;
-            background-color: #fff;
-            transform-origin: 0 0;
-            transition: transform .3s ease-out;
-            box-shadow: 0 1px 2px rgba(0,0,0,.3);
-        }
-
-        &-middle{
-            position: absolute;
-            top: 8px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #fff;
-            transition: all .3s ease-out;
-            transform-origin: 0 50%;
-            box-shadow: 0 1px 2px rgba(0,0,0,.3);
-        }
-
-        &:after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 70%;
-            height: 2px;
-            background-color: #fff;
-            transform-origin: 0 100%;
-            transition: transform .3s ease-out;
-            box-shadow: 0 1px 2px rgba(0,0,0,.3);
-        }
-    }
+   
 
 }
+
+
 

@@ -1,27 +1,26 @@
 .row{
 
     display: flex;
-    flex-wrap:wrap;
-   
- 
-    /* @mixin atLarge {
-         &--gutters>div{
-             padding-right: 65px;     
-         } 
-         &--gutters{
-             margin-right: -65px;
-         }
-         &__large-col-4{
-             width: 33.33%;   
-         }
-         &__large-col-8{
-             width: 66.66%;
-         }
-     }  */
+    flex-wrap: wrap;
+
+
+
      &__col{
          width: 100%;
+
+         &--gutters{
+            padding: 0 2.5rem;
+         }
      
          @mixin atLarge {
+
+            
+            &--large-2{
+            
+                width: 12.5%; 
+            
+                
+            }
 
             &--large-4{
                 width: 33.33%;

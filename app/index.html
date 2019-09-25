@@ -12,27 +12,25 @@
 
   <script src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
 
-
+ 
   <link rel = "stylesheet" href = "temp/styles/styles.css">
 </head>
 <body>
-<header class = "header">
+<header class = "site-element header" data-matching-link = "#header">
  
   <nav class = "site-nav">
     <div class = "site-nav__menu-icon">
       <div class = "site-nav__menu-icon-middle"></div>
     </div>
 
-    <div class = "site-nav__nav-content">
-      <div class = "site-section">
-    <div class = "wrapper">
+    <div class = "site-nav__content">
     <div class = "site-nav__contact-social-section">
+
       <div class = "site-nav__contact-section">
           <strong>Email: </strong>email@email.pl  <strong>Tel: </strong>+(48) 999999999
       </div>
     
       <div class = "site-nav__social-sections">
-
         <a href = "" class = "site-nav__social-section">
           <i class="fab fa-facebook-f"></i>
         </a>
@@ -44,18 +42,16 @@
         </a>
       </div>
     </div>
+
     <ul class = "site-nav__list">
-      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Home</a></li>
-      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">O nas</a></li>
-      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Oferta</a></li>
-      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Galeria</a></li>
-      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Cennik</a></li>
-      <li class = "site-nav__item"><a class = "site-nav__link" href = "#">Kontakt</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#" id = "header">Home</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#" id = "about-us">O nas</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#" id = "gallery-slider">Galeria</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#" id = "offer">Oferta</a></li>
+      <li class = "site-nav__item"><a class = "site-nav__link" href = "#" id = "contact">Kontakt</a></li>
     </ul>
   </div>
-  </div>
-</div>
-  </nav>
+</nav>
 
   <div class = "header__photo"></div>
 
@@ -69,7 +65,7 @@
 </header>
 
 <main>
-  <section class = "about-us">
+  <section class = "site-element about-us" data-matching-link="#about-us">
    
     <div class = " site-section site-section--double-padding-at-top site-section--more-padding-at-bottom">
     <div class = "wrapper wrapper--width-atLarge-80vw">
@@ -95,11 +91,33 @@
   </div>
   </div>
   </div>
-
   </section>
 
+  <section class = "site-element gallery-slider" data-matching-link="#gallery-slider">
+  
+      <div class = "site-section site-section--more-padding-at-top site-section--more-padding-at-bottom">
+       
+    
+      <ul class = "row gallery-slider__list ">
+        <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item gallery-slider__item--last-clone"> <img src = "assets/images/hairdresser-3-large.jpg"/> </li>
+      <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item"> <img src = "assets/images/hairdresser-1-large.jpg"/></li>
+      <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item"> <img src = "assets/images/hairdresser-2-large.jpg"/></li>
+      <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item"> <img src = "assets/images/hairdresser-3-large.jpg"/> </li>
+      <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item"> <img src = "assets/images/hairdresser-1-large.jpg"/> </li>
+      <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item"> <img src = "assets/images/hairdresser-2-large.jpg"/></li>
+      <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item"> <img src = "assets/images/hairdresser-3-large.jpg"/> </li>
+      <li class = "row__col row__col--large-2 row__col--gutters gallery-slider__item gallery-slider__item--first-clone"> <img src = "assets/images/hairdresser-1-large.jpg"/></li>
+    </ul>
 
-  <section class = "offer">
+    
+      <a class = "gallery-slider__prev" href = "#">previous</a>
+      <a class = "gallery-slider__next" href = "#">next</a>
+    </div>
+  
+    
+  </section>
+
+  <section class = "site-element offer" data-matching-link="#offer">
         <div class = "row">
           <div class = "row__col row__col--large-6 offer__left">
 
@@ -131,10 +149,9 @@
         </div>
   
   </section>
-  <section id = "last-work"></section>
-  <section id = "price"></section>
+
 </main>
-<footer class = "contact">
+<footer class = "site-element contact" data-matching-link="#contact">
    <div class = "contact__map">
      <div class = "site-section site-section--more-padding-at-top site-section--more-padding-at-bottom">
        <div class = "wrapper wrapper--no-padding-x wrapper--width-atLarge-80vw">
@@ -174,8 +191,10 @@
 </footer>
 
 <div class = "clip">
-
-
 </div>
+
+<script src = "temp/scripts/app.js"></script>
+
+
 </body>
 </html>
