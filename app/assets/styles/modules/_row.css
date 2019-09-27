@@ -5,11 +5,12 @@
 
 
 
+
      &__col{
          width: 100%;
 
          &--gutters{
-            padding: 0 2.5rem;
+            padding: 0 1.5rem;
          }
      
          @mixin atLarge {
@@ -17,13 +18,17 @@
             
             &--large-2{
             
-                width: 12.5%; 
-            
+                width: 16.66%; 
                 
             }
 
             &--large-4{
                 width: 33.33%;
+            }
+
+            &--large-4-calc{
+                
+                width: calc(33.33% - 30px);
             }
 
             &--large-8{

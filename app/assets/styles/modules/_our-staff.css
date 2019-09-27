@@ -1,0 +1,20 @@
+.our-staff{
+
+    
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+    &__cards-wrapper{
+    
+        background-color: $blue;
+        box-shadow: 0px 2px 4px rgba(0,0,0,.4);
+    }
+  
+    /* taka sama wysokość wszystkich elementów,  */
+    &__card{
+      
+       
+        display: flex;
+    }
+}

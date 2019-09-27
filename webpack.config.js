@@ -1,6 +1,7 @@
 
-
+const webpack = require('webpack');
 let path = require('path');
+
 module.exports = {
 
 entry:"./app/assets/scripts/app.js",
@@ -23,8 +24,14 @@ module: {
       }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
+],
+
   
-
-
 }
 
