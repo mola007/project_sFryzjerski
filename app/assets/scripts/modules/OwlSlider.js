@@ -5,7 +5,7 @@ import 'owl.carousel/dist/owl.carousel.min.js';
 class OwlSlider{
 
     constructor(){  
-        console.log('działo 12');
+      
   
         $('.owl-carousel').owlCarousel({
             center: true,

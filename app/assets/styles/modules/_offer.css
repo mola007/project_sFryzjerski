@@ -4,19 +4,56 @@
     font-size: 1.25rem;
     font-weight: 300;
 
+
     &__left{
         background: rgb(227,227,227); 
         padding:  3.125rem 1.125rem;
         display: flex;
         justify-content: center;
+        transform: translateX(-100%);
+        transition: all .5s ease-in;
+        opacity: 0;
+
+        &--show{
+            transform: translateX(0%); 
+            opacity: 1;
+        }
     }
  
+    &__right{
+        transform: translateX(100%);
+        transition: all .5s ease-in;
+        opacity: 0;
+
+        &--show{
+            transform: translateX(0%); 
+            opacity: 1;
+        }
+    }
     &__img-wrapper{
        max-width: 45%;
 
+       &--test{
+        
+        transition:all .5s ease-in;
+        transition-delay: .5s;
+        
+        transform: translateX(0px) ;
+ 
+
+
+        &--move{
+        
+            
+           
+            
+ 
+        }
+       }
+
         &:nth-child(2){ 
         margin-top: 50px;
-        margin-left: -200px;
+        margin-left: -200px; 
         }
     }
     img{

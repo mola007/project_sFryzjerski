@@ -160,18 +160,18 @@
     text-align: center;
     transition: all .3 ease-out;
 
+   
+
     @mixin atMedium{
         flex-direction: row;
-        justify-content: center;   
-
-        &--sticky-header{
-            
-            position: fixed;
-            
+        justify-content: center;  
+        
+        &--sticky-nav{
             background-color: rgba(255,255,255,.9);
+            position: fixed;
             top: 0;
-            width: 100%;
-        }
+            width: 100%;  
+        }    
     }
 }
 &__item{
