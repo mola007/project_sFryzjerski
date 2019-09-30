@@ -2,8 +2,8 @@ import $ from 'jquery';
 
 class MobileMenu{
     constructor(){
-        this.siteNavContent = $('.site-nav__content');
-        this.menuIcon = $('.site-nav__menu-icon');
+        this.siteNav = $('.site-nav');
+        this.menuIcon = $('.header__menu-icon');
 
        
         this.events();
@@ -15,8 +15,8 @@ events(){
 }
 
 toggleTheMenu(){
-     this.siteNavContent.toggleClass('site-nav__content--is-visible');
-     this.menuIcon.toggleClass('site-nav__menu-icon--open')
+     this.siteNav.toggleClass('site-nav--is-visible');
+     this.menuIcon.toggleClass('header__menu-icon--open')
 
 
 }

@@ -20,7 +20,7 @@ class ChangeOnScroll{
     }
 
     addEvents(){
-       $(window).on('scroll', this.debounce(this.stickyNav).bind(this));
+       //$(window).on('scroll', this.debounce(this.stickyNav).bind(this));
        $(window).on('scroll', this.debounce(this.flipCardsOnScroll).bind(this));
        $(window).on('scroll', this.debounce(this.revealOnScroll).bind(this));
     }
@@ -49,12 +49,12 @@ class ChangeOnScroll{
 
     };
      //co ma się stać z navigacją podczas skrolowana
-     stickyNav(){   
-        if($(window).scrollTop() >= this.siteNavList.offset().top)
-        this.siteNavList.addClass('site-nav__list--sticky-nav');
-        else
-        this.siteNavList.removeClass('site-nav__list--sticky-nav');
-    } 
+    //  stickyNav(){   
+    //     if($(window).scrollTop() >= this.siteNavList.offset().top)
+    //     this.siteNavList.addClass('site-nav__list--sticky-nav');
+    //     else
+    //     this.siteNavList.removeClass('site-nav__list--sticky-nav');
+    // } 
     //stuff elements - reveal on scroll
     flipCardsOnScroll(){  
         if($(window).scrollTop() >= this.staffCards.offset().top - $(window).height()/1.2)

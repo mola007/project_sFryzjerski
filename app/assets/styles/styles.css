@@ -1,3 +1,7 @@
+
+@import 'owl.carousel/dist/assets/owl.carousel.css';
+@import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+
 @import "normalize.css";
 @import "base/_global";
 @import "base/_mixins";
@@ -17,6 +21,4 @@
 @import "modules/_gallery-slider";
 @import "modules/_our-staff";
 
-@import 'owl.carousel/dist/assets/owl.carousel.css';
-@import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 
