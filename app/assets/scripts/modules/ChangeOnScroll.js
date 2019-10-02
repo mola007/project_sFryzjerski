@@ -21,7 +21,7 @@ class ChangeOnScroll{
 
     addEvents(){
        //$(window).on('scroll', this.debounce(this.stickyNav).bind(this));
-       $(window).on('scroll', this.debounce(this.flipCardsOnScroll).bind(this));
+       //$(window).on('scroll', this.debounce(this.flipCardsOnScroll).bind(this));
        $(window).on('scroll', this.debounce(this.revealOnScroll).bind(this));
     }
 

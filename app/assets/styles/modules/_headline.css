@@ -1,12 +1,23 @@
 .headline{  
     font-weight: normal;
 
+    &--300{
+        font-weight: 300;
+    }
+
+    &--inline-block{
+        display: inline-block;
+    }
+
     &--center{
         text-align: center;
     }
-    
     &--font-30px{
         font-size: 1.875rem;
+    }
+
+    &--font-32px{
+        font-size: 2rem;
     }
 
     &--font-75px{
@@ -17,9 +28,8 @@
         color: $gold;
     }
 
-    &--white{
-        
-        color: #f0eda3;
+    &--white{ 
+        color: $yellow;
     }
 
     &--margin-top-0{
@@ -30,4 +40,21 @@
         margin-bottom: 0;
     }
 
+    &--after{
+        
+        @mixin atMedium{
+            &:after{
+                content: "";
+                display:block;
+                height: 2px;
+                width: 20%;
+                background: $gold;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+       
+    }
+
+   
 }
