@@ -9,11 +9,10 @@ body{
 }
 
 p{
-
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 1.5;
-    text-indent: 30px; 
+ 
     color: rgba(0,0,0,.8);
 }
 

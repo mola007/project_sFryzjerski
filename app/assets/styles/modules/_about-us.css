@@ -14,8 +14,24 @@
        width: 100%;
        left: 0;
        bottom: 0;    
-       background: $blue;
+       background: #fff;
        clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
    }
+
+   &__headline{
+
+    &:after{
+        content: "";
+        display:block;
+        height: 2px;
+        width: 20%;
+        background: $gold;
+        margin: 0 auto;
+        margin-top: 10px;    
+    }
+
+   }
+
+  
 
 }

@@ -2,6 +2,17 @@
     /* padding: 2.5rem 0; */
     padding: 1rem 0; 
 
+    @mixin atLarge{
+        &--more-padding-at-top-large{
+            padding-top: 3.125rem; 
+        }
+
+        &--more-padding-at-bottom-large{
+            padding-bottom: 3.125rem; 
+        }
+     
+    }
+
     &--more-padding-at-top{
         padding-top: 3.125rem;
     }
