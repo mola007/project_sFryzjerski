@@ -12,11 +12,11 @@ class OwlSlider{
             
             loop:true,
             stagePadding: 50,
-            slideBy:2,
+            slideBy:1,
            
 
             margin:50,
-            nav:true,
+            nav:false,
             autoplayHoverPause:true,
             autoplay:true,
             autoplayTimeout:3000,

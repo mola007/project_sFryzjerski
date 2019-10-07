@@ -3,10 +3,11 @@
 
  position: absolute;
  width: 100%;
- top: 0;
+ top: 0;    
  right: -100%;
  z-index: 1;
  transition: all .3s ease-out;
+ 
 
     @mixin atMedium{
         right: 0;
@@ -18,9 +19,13 @@
 
     &__content{
         background-color: rgba(255,255,255,.9);
-       
+        padding-bottom: 15px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+        
         @mixin atMedium{
-            background-color: rgba(255,255,255,.9);
+            background-color: rgba(255,255,255,.7);
+            padding-bottom: 0;
+            box-shadow: none;
         }   
     }
 

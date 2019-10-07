@@ -13,6 +13,7 @@
   <script src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
 
   <link rel = "stylesheet" href = "temp/styles/styles.css">
+  <script src = "temp/scripts/Vendor.js"></script>
 </head>
 <body>
 <!--HEADER SECTION -->
@@ -20,7 +21,7 @@
   <div class = "header__menu-icon">
     <div class = "header__menu-icon-middle"></div>
   </div>
-
+  
   <nav class = "site-nav">
     <div class = "site-nav__content">
       <div class = "site-nav__contact-social-section">
@@ -65,18 +66,18 @@
 <main>
   <!--ABOUT-US SECTION -->
   <section class = "site-element about-us" data-matching-link="#about-us">
-    <div class = "site-section site-section--larger-padding-at-top site-section--double-padding-at-top-from-large site-section--more-padding-at-bottom-from-medium">
-      <div class = "wrapper wrapper--width-atLarge-80vw">
-        <h2 class = "about-us__headline headline headline--font-32px headline--300 headline--inline-block headline--margin-top-0 headline--margin-bottom-0">W kilku zdaniach o naszym salonie</h2> 
+    <div class = "site-section site-section--more-padding-at-bottom-large">
+      <div class = "wrapper wrapper--width-atLarge-80vw test">
+        <h2 class = "about-us__headline headline headline--font-32px headline--300 headline--inline-block headline--margin-bottom-0">W kilku zdaniach o naszym salonie</h2> 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>      
       </div>
     </div>
   </section>
    <!--OUR-STAFF SECTION -->
-  <section class = "site-element our-staff" data-matching-link="#our-staff">
+  <section class = "site-element our-staff lazyload" data-matching-link="#our-staff">
     <div class = " site-section site-section--more-padding-at-top-large site-section--more-padding-at-bottom-large">
-      <div class = "wrapper wrapper--large wrapper--width-extraLarge-80vw">
+      <div class = "wrapper wrapper--width-extraLarge-80vw">
         <h2 class = " our-staff__headline headline--shadow headline headline--font-36px headline--300 headline--center headline--margin-top-0">Nasz zespół</h2>
         
         <div class = "row">
@@ -88,9 +89,9 @@
                   <div class = "our-staff__img-txt">
                     <div class = "our-staff__staff-img">
                       <picture>
-                          <source srcset = "assets/images/our-staff-from-large.jpg 512w, assets/images/our-staff-large-hi-dpi.jpg 1024w" media = "(min-width: 992px)">
-                          <source srcset = "assets/images/our-staff-medium.jpg 992w, assets/images/our-staff-medium-hi-dpi.jpg 1984w" media = "(min-width: 576px)">
-                          <img srcset = "assets/images/our-staff-small.jpg 576w, assets/images/our-staff-small-hi-dpi.jpg 1152w," alt = "Kasia">
+                          <source data-srcset = "assets/images/our-staff-from-large.jpg 512w, assets/images/our-staff-large-hi-dpi.jpg 1024w" media = "(min-width: 992px)">
+                          <source data-srcset = "assets/images/our-staff-medium.jpg 992w, assets/images/our-staff-medium-hi-dpi.jpg 1984w" media = "(min-width: 576px)">
+                          <img  class = "lazyload" data-srcset = "assets/images/our-staff-small.jpg 576w, assets/images/our-staff-small-hi-dpi.jpg 1152w," alt = "Kasia">
                       </picture>
                     </div>
                     <p class = "our-staff__txt wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -98,7 +99,7 @@
               </div>
                 <div class = "our-staff__theback">
                   <div class = "our-staff__theback-logo">
-                    <img src = "assets/images/lotus-1.png"/>
+                    <img  class = "lazyload" data-src = "assets/images/lotus-1.png"/>
                   </div>
                 </div>
               </div>
@@ -112,16 +113,16 @@
                   <h3 class = "our-staff__card-title headline headline--center headline--grey">Wojtek</h3>
                   <div class = "our-staff__staff-img">
                     <picture>
-                      <source srcset = "assets/images/our-staff-W-from-large.jpg 512w, assets/images/our-staff-W-large-hi-dpi.jpg 1024w" media = "(min-width: 992px)">
-                      <source srcset = "assets/images/our-staff-W-medium.jpg 992w, assets/images/our-staff-W-medium-hi-dpi.jpg 1984w" media = "(min-width: 576px)">
-                      <img srcset = "assets/images/our-staff-W-small.jpg 576w, assets/images/our-staff-W-small-hi-dpi.jpg 1152w," alt = "Wojtek">
+                      <source data-srcset = "assets/images/our-staff-W-from-large.jpg 512w, assets/images/our-staff-W-large-hi-dpi.jpg 1024w" media = "(min-width: 992px)">
+                      <source data-srcset = "assets/images/our-staff-W-medium.jpg 992w, assets/images/our-staff-W-medium-hi-dpi.jpg 1984w" media = "(min-width: 576px)">
+                      <img  class = "lazyload" data-srcset = "assets/images/our-staff-W-small.jpg 576w, assets/images/our-staff-W-small-hi-dpi.jpg 1152w," alt = "Wojtek">
                   </picture>           
                   </div>
                   <p class = "our-staff__txt wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
                 <div class = "our-staff__theback">
                   <div class = "our-staff__theback-logo">
-                    <img src = "assets/images/lotus-1.png"/>
+                    <img  class = "lazyload" data-src = "assets/images/lotus-1.png"/>
                   </div>
                 </div>
               </div>
@@ -135,16 +136,16 @@
                   <h3 class = "our-staff__card-title headline headline--center headline--grey">Monika</h3>
                   <div class = "our-staff__staff-img">
                     <picture>
-                      <source srcset = "assets/images/our-staff-M-from-large.jpg 512w, assets/images/our-staff-M-large-hi-dpi.jpg 1024w" media = "(min-width: 992px)">
-                      <source srcset = "assets/images/our-staff-M-medium.jpg 992w, assets/images/our-staff-M-medium-hi-dpi.jpg 1984w" media = "(min-width: 576px)">
-                      <img srcset = "assets/images/our-staff-M-small.jpg 576w, assets/images/our-staff-M-small-hi-dpi.jpg 1152w," alt = "Monika">
+                      <source data-srcset = "assets/images/our-staff-M-from-large.jpg 512w, assets/images/our-staff-M-large-hi-dpi.jpg 1024w" media = "(min-width: 992px)">
+                      <source data-srcset = "assets/images/our-staff-M-medium.jpg 992w, assets/images/our-staff-M-medium-hi-dpi.jpg 1984w" media = "(min-width: 576px)">
+                      <img  class = "lazyload" data-srcset = "assets/images/our-staff-M-small.jpg 576w, assets/images/our-staff-M-small-hi-dpi.jpg 1152w," alt = "Monika">
                   </picture>           
                   </div>
                   <p class = "our-staff__txt wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
                 <div class = "our-staff__theback">
                   <div class = "our-staff__theback-logo">
-                    <img src = "assets/images/lotus-1.png"/>
+                    <img  class = "lazyload" data-src = "assets/images/lotus-1.png"/>
                   </div>
                 </div>
               </div>
@@ -154,73 +155,65 @@
       </div>
     </div>  
   </section>
-
-  <section class = "site-element gallery-slider" data-matching-link="#gallery-slider">
-  
-      <div class = "site-section site-section--more-padding-at-top site-section--more-padding-at-bottom">
-       
-      <h2 class = "headline headline--gold headline--margin-top-0 headline--center">Galeria</h2>
-
-      <div class="owl-carousel owl-theme wrapper">
-          <div class="item"><img 
-            sizes = "(min-width: 576px) 480px, 100vw" 
-            srcset="assets/images/hairstyle-1-small-screen.jpg 576w, assets/images/hairstyle-1-from-small.jpg 480w, assets/images/hairstyle-1-hi-dpi.jpg 960w" alt="sombre">
-          </div>
-
-          <div class="item">
-            <img 
-            sizes = "(min-width: 576px) 480px, 100vw" 
-            srcset="assets/images/hairstyle-2-small-screen.jpg 576w, assets/images/hairstyle-2-from-small.jpg 480w, assets/images/hairstyle-2-hi-dpi.jpg 960w" alt="upięcia">
-          </div>
-          <div class="item">
-            <img 
-            sizes = "(min-width: 576px) 480px, 100vw" 
-            srcset="assets/images/hairstyle-5-small-screen.jpg 576w, assets/images/hairstyle-5-from-small.jpg 480w, assets/images/hairstyle-5-hi-dpi.jpg 960w" alt="męskie strzyżenie">
-          </div>
-          <div class="item">
-            <img 
-            sizes = "(min-width: 576px) 480px, 100vw" 
-            srcset="assets/images/hairstyle-3-small-screen.jpg 576w, assets/images/hairstyle-3-from-small.jpg 480w, assets/images/hairstyle-3-hi-dpi.jpg 960w" alt="jeden kolor">
-          </div>
-          <div class="item">
-            <img 
-            sizes = "(min-width: 576px) 480px, 100vw" 
-            srcset="assets/images/hairstyle-4-small-screen.jpg 576w, assets/images/hairstyle-4-from-small.jpg 480w, assets/images/hairstyle-4-hi-dpi.jpg 960w" alt="jeden kolor">
-          </div>
-          <div class="item">
-            <img 
-            sizes = "(min-width: 576px) 480px, 100vw" 
-            srcset="assets/images/hairstyle-6-small-screen.jpg 576w, assets/images/hairstyle-6-from-small.jpg 480w, assets/images/hairstyle-6-hi-dpi.jpg 960w" alt="męskie strzyżenie">
-          </div>
+  <!--GALLERY SLIDER -->
+  <section class = "site-element" data-matching-link="#gallery-slider">
+    <div class = "site-section site-section--more-padding-at-top-large site-section--more-padding-at-bottom-large"> 
+      <h2 class = "headline--shadow headline headline--font-36px headline--300 headline--center headline--margin-top-0">Galeria</h2>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class = "lazyload"
+          sizes = "(min-width: 600px) 480px, 100vw" 
+          data-srcset="assets/images/hairstyle-1-small-screen.jpg 576w, assets/images/hairstyle-1-from-small.jpg 480w, assets/images/hairstyle-1-hi-dpi.jpg 960w" alt="sombre">
+        </div>
+        <div class="item">
+          <img class = "lazyload"
+          sizes = "(min-width: 600px) 480px, 100vw" 
+          data-srcset="assets/images/hairstyle-2-small-screen.jpg 576w, assets/images/hairstyle-2-from-small.jpg 480w, assets/images/hairstyle-2-hi-dpi.jpg 960w" alt="upięcia">
+        </div>
+        <div class="item">
+          <img class = "lazyload"
+          sizes = "(min-width: 600px) 480px, 100vw" 
+          data-srcset="assets/images/hairstyle-5-small-screen.jpg 576w, assets/images/hairstyle-5-from-small.jpg 480w, assets/images/hairstyle-5-hi-dpi.jpg 960w" alt="męskie strzyżenie">
+        </div>
+        <div class="item">
+          <img class = "lazyload"
+          sizes = "(min-width: 600px) 480px, 100vw" 
+          data-srcset="assets/images/hairstyle-3-small-screen.jpg 576w, assets/images/hairstyle-3-from-small.jpg 480w, assets/images/hairstyle-3-hi-dpi.jpg 960w" alt="jeden kolor">
+        </div>
+        <div class="item">
+          <img class = "lazyload"
+          sizes = "(min-width: 600px) 480px, 100vw" 
+          data-srcset="assets/images/hairstyle-4-small-screen.jpg 576w, assets/images/hairstyle-4-from-small.jpg 480w, assets/images/hairstyle-4-hi-dpi.jpg 960w" alt="jeden kolor">
+        </div>
+        <div class="item">
+          <img class = "lazyload"
+          sizes = "(min-width: 600px) 480px, 100vw" 
+          data-srcset="assets/images/hairstyle-6-small-screen.jpg 576w, assets/images/hairstyle-6-from-small.jpg 480w, assets/images/hairstyle-6-hi-dpi.jpg 960w" alt="męskie strzyżenie">
+        </div>
       </div>
-
-    
-    </ul> 
-
-    </div>
-  
-    
+    </div> 
   </section>
-
+  <!--OFFER SECTION-->
   <section class = "site-element offer" data-matching-link="#offer">
         <div class = "row">
           <div class = "row__col row__col--large-6 offer__left">
-
-          <div class = "offer__img-wrapper">
-            <picture>
-              <img srcset = "assets/images/hairstyle-large-screen.jpg 384w, assets/images/hairstyle-large-screen.jpg 768w," alt = "hairstyle"/>  
-            </picture> 
-          </div>
-          
-          <div class = "offer__img-wrapper offer__img-wrapper--test">
-            <picture>
-              <img srcset = "assets/images/hairstyle-large-screen.jpg 384w, assets/images/hairstyle-large-screen.jpg 768w," alt = "hairstyle"/>  
-            </picture> 
-          </div>
+            <div class = "offer__img-wrapper">
+              <picture>
+                <source data-srcset = "assets/images/offer-eLarge-p1.jpg 342w, assets/images/offer-eLarge-p1-hi-dpi.jpg 684w" media = "(min-width: 1300px)">
+                <source data-srcset = "assets/images/offer-large.jpg 398w, assets/images/offer-large-hi-dpi.jpg 796w" media = "(min-width: 992px)">
+                  <source data-srcset = "assets/images/offer-medium.jpg 768w, assets/images/offer-medium-hi-dpi.jpg 1536w" media = "(min-width: 576px)">
+                  <img class = "lazyload" data-srcset = "assets/images/offer-small.jpg 576w, assets/images/offer-small-hi-dpi.jpg 1152w," alt = "cutting hair">
+              </picture> 
+                
+            </div>
+            
+            <div class = "offer__img-wrapper offer__img-wrapper--move">  
+                <img class = "lazyload" data-srcset = "assets/images/offer-eLarge-p2.jpg 492w, assets/images/offer-eLarge-p2-hi-dpi.jpg 984w," alt = "cutting hair">  
+            </div>
         </div>
         
-          <div class = "row__col row__col--large-6 offer__right">
-          <h2 class = "headline headline--gold headline--margin-top-0 headline--font-30px  headline--center">Nasza oferta</h2>
+        <div class = "row__col row__col--large-6 offer__right">
+          <h2 class = "headline headline--font-36px headline--300 headline--center headline--margin-top-0">Nasza oferta</h2>
           <ul class = "offer__list">
             <li class = "offer__list-item"> Lorem ipsum dolor sit amet</li>
             <li class = "offer__list-item"> Lorem ipsum dolor sit amet, consectetur adipiscing eli</li>
@@ -230,56 +223,43 @@
             <li class = "offer__list-item"> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
             <li class = "offer__list-item"> Excepteur sint occaecat cupidatat non proident</li>
           </ul>
-          </div>
         </div>
-  
+      </div>
   </section>
-
 </main>
-<footer class = "site-element contact" data-matching-link="#contact">
-   <div class = "contact__map">
-     <div class = "site-section site-section--more-padding-at-top site-section--more-padding-at-bottom">
-       <div class = "wrapper wrapper--no-padding-x wrapper--width-atLarge-80vw">
-      <h2 class = "headline  headline--center headline--margin-top-0 headline--gold headline--font-30px">Skontaktuj się z nami</h2>
+<!--CONTACT SECTION-->
+<footer class = "site-element contact" data-matching-link="#contact"> 
+  <div class = "site-section  site-section--more-padding-at-top-large site-section--more-padding-at-bottom-large">
+    <div class = "wrapper wrapper--no-padding-x wrapper--width-atLarge-80vw">
+      <h2 class = "headline headline--font-36px headline--300 headline--center headline--margin-top-0">Skontaktuj się z nami</h2>
       <div class = " contact__map-wrapper">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.3728236423035!2d22.050298315269465!3d50.564432379491215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d2cc2b4bec241%3A0x7bbcdbd8ceaa5c59!2sOfiar%20Katynia%2022%2C%2037-450%20Stalowa%20Wola!5e0!3m2!1spl!2spl!4v1568533897821!5m2!1spl!2spl"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          <!-- width="600" height="450" -->
       </div>
     </div>
   </div>
-   </div>
-   <div class = "contact__widgets-wrapper ">
-    <div class = "contact__widgets ">  
-      <div class = " contact__widget ">
-          <h3 class = "headline headline--margin-top-0 headline--margin-bottom-0">Salon Fantazja</h3>
-          <span>ul. Dmowskiego 10,</span> 37-450 Stalowa Wola
-          </div>
-
-          <div class = "contact__widget ">
-          <h3 class = "headline headline--margin-top-0 headline--margin-bottom-0">Rezerwacja wizyt</h3>
-          <span>Tel. <strong>999999999</strong>,</span> Email.  <strong>email@email.com</strong>
-        </div>
-
-        <div class = "contact__widget">
-            <h3 class = "headline headline--margin-top-0 headline--margin-bottom-0">Godziny otwarcia</h3>
-            Poniedziałek – Piątek:
-            <strong>6.30 – 22.30</strong>
-            <br>
-            Sobota: <strong>9.00 - 15.00</strong>
-            <br>
-            Niedziela: zamknięte
-        </div> 
-      </div>
-  
-   </div>
-  
+  <div class = "contact__widgets-wrapper">
+  <div class = "contact__widgets">  
+    <div class = " contact__widget">
+      <h3 class = "headline headline--gold headline--margin-top-0 headline--margin-bottom-0">Salon Fantazja</h3>
+      <span>ul. Dmowskiego 10,</span> 37-450 Stalowa Wola
+    </div>
+    <div class = "contact__widget">
+      <h3 class = "headline headline--gold headline--margin-top-0 headline--margin-bottom-0">Rezerwacja wizyt</h3>
+      <span>Tel. <strong>999999999</strong>,</span> Email.  <strong>email@email.com</strong>
+    </div>
+    <div class = "contact__widget">
+      <h3 class = "headline headline--gold headline--margin-top-0 headline--margin-bottom-0">Godziny otwarcia</h3>
+      Poniedziałek – Piątek:
+      <strong>6.30 – 22.30</strong>
+      <br>
+      Sobota: <strong>9.00 - 15.00</strong>
+      <br>
+      Niedziela: zamknięte
+    </div> 
+  </div>
+  </div>
 </footer>
 
-<div class = "clip">
-</div>
-
 <script src = "temp/scripts/app.js"></script>
-
-
 </body>
 </html>

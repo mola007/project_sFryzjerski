@@ -9,23 +9,24 @@
 
         &--more-padding-at-bottom-large{
             padding-bottom: 3.125rem; 
-        }
-     
-    }
-
-    &--more-padding-at-top{
-        padding-top: 3.125rem;
+        }  
     }
 
     &--larger-padding-at-top{
         padding-top: 4.125rem;
     }
 
+    &--more-padding-at-top{
+        padding-top: 3.125rem;
+    }
+
+   
+
     &--double-padding-at-top{
         padding-top: 6.25rem;
     }
 
-    &--double-padding-at-top-from-large{
+    &--double-padding-at-top-large{
         @mixin atLarge{
         padding-top: 6.25rem;
         }
@@ -42,7 +43,11 @@
         
     }
 
-    &--no-margin-top{
-       margin-top: 0;
+    &--no-padding-top{
+       padding-top: 0;
     }
+
+    &--no-padding-bottom{
+        padding-bottom: 0;
+     }
 }

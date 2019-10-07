@@ -21,7 +21,7 @@ class ChangeOnScroll{
 
     addEvents(){
        //$(window).on('scroll', this.debounce(this.stickyNav).bind(this));
-       //$(window).on('scroll', this.debounce(this.flipCardsOnScroll).bind(this));
+       $(window).on('scroll', this.debounce(this.flipCardsOnScroll).bind(this));
        $(window).on('scroll', this.debounce(this.revealOnScroll).bind(this));
     }
 
@@ -55,20 +55,26 @@ class ChangeOnScroll{
     //     else
     //     this.siteNavList.removeClass('site-nav__list--sticky-nav');
     // } 
-    //stuff elements - reveal on scroll
+    //our staff - flip cards on scroll
     flipCardsOnScroll(){  
-        if($(window).scrollTop() >= this.staffCards.offset().top - $(window).height()/1.2)
-        this.staffCards.addClass('our-staff__card--flip-card');        
+        if($(window).scrollTop() >= this.staffCards.offset().top - $(window).height()/3)
+         this.staffCards.addClass('our-staff__card--flip-card');        
     }
-    //offer elements
+    //offer elements 
     revealOnScroll(){
-        if($(window).scrollTop() >= this.offerContainer.offset().top - $(window).height()/1.2){
+        if($(window).scrollTop() >= this.offerContainer.offset().top - $(window).height()/3){
             this.offerLeft.addClass('offer__left--show');
             this.offerRight.addClass('offer__right--show');
-        }
-        
-     
+            this.flash();
+        }  
     }
+    flash(){
+        this.offerLeft.on('transitionend', () => {
+            this.offerContainer.addClass('offer--flash');
+        });      
+    }
+
+
 
 
 
