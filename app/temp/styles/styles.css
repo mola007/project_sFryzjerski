@@ -787,7 +787,7 @@ img{
  width: 100%;
  top: 0;    
  right: -100%;
- z-index: 1;
+ z-index: 5;
  transition: all .3s ease-out;
 }
 @media (min-width: 768px){
@@ -834,11 +834,11 @@ img{
             color: #7d7546;
         }
 .site-nav__contact-section strong:nth-child(2){
-            padding-left: 20px;
+            padding-left: 1.25rem;
             }
 .site-nav__social-sections{
         display: flex;
-        padding-bottom: 18px;
+        padding-bottom: 1.25rem;
         order: 1;
     }
 @media (min-width: 768px){
@@ -870,23 +870,28 @@ img{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        transition: all .3 ease-out;
+        transition: background-color .2s ease-out;
+        font-size: 1.25rem;
     }
 @media (min-width: 768px){
 .site-nav__list{
             flex-direction: row;
-            justify-content: center
+            justify-content: center;
+            padding: 1.25rem 0
     }  
             
             .site-nav__list--sticky-nav{
-                background-color: rgba(255,255,255,.9);
+                background-color: rgba(0,0,0,.6);
+                color: white;
                 position: fixed;
                 top: 0;
-                width: 100%;  
+                width: 100%;
+                padding: .8rem 0;  
+                font-size: 1.05rem;  
             }
     }
 .site-nav__item{
-        padding: 1.25rem;
+        padding:1.25rem; 
         width: 50%;
     }
 @media (min-width: 576px){
@@ -896,18 +901,21 @@ img{
     }
 @media (min-width: 768px){
 .site-nav__item{
-            width: auto
+            width: auto;
+            padding:0 1.25rem
     }
     }
 .site-nav__link{
         position: relative;
         color: #000;
         text-decoration: none;   
-        font-size: 1.25rem;
         border-bottom: 1px solid #7d7546;
         padding-bottom: 5px;
         display: block;    
     }
+.site-nav__link--white{
+            color: #fff;
+        }
 @media (min-width: 768px){
 .site-nav__link{
             border-bottom: none;
@@ -1157,7 +1165,6 @@ img{
 .our-staff{
     margin-top: -2px;
     position: relative;
-    z-index: 5;
     background: #f8f4fc;
 }
 @media (min-width: 992px){

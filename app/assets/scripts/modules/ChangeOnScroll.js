@@ -2,25 +2,25 @@ import $ from 'jquery';
 import waypoints from 'waypoints/lib/noframework.waypoints'; 
 
 
-
-
 class ChangeOnScroll{
 
     constructor(){
+
     //nawigacja 
     this.siteNavList = $('.site-nav__list');
-    this.addEvents();
+    this.siteNavLink = $('.site-nav__link');
     //our-staff cards
     this.staffCards = $('.our-staff__card');
     //offer blocks
     this.offerContainer = $('.offer');
     this.offerLeft = $('.offer__left');
     this.offerRight = $('.offer__right');
-
+  
+    this.addEvents();
     }
 
     addEvents(){
-       //$(window).on('scroll', this.debounce(this.stickyNav).bind(this));
+       $(window).on('scroll', this.stickyNav.bind(this));
        $(window).on('scroll', this.debounce(this.flipCardsOnScroll).bind(this));
        $(window).on('scroll', this.debounce(this.revealOnScroll).bind(this));
     }
@@ -49,12 +49,15 @@ class ChangeOnScroll{
 
     };
      //co ma się stać z navigacją podczas skrolowana
-    //  stickyNav(){   
-    //     if($(window).scrollTop() >= this.siteNavList.offset().top)
-    //     this.siteNavList.addClass('site-nav__list--sticky-nav');
-    //     else
-    //     this.siteNavList.removeClass('site-nav__list--sticky-nav');
-    // } 
+     stickyNav(){   
+        if($(window).scrollTop() <= this.siteNavList.offset().top/2){
+            this.siteNavList.removeClass('site-nav__list--sticky-nav');
+            this.siteNavLink.removeClass('site-nav__link--white');       
+        }else{
+            this.siteNavList.addClass('site-nav__list--sticky-nav'); 
+            this.siteNavLink.addClass('site-nav__link--white');
+        } 
+    } 
     //our staff - flip cards on scroll
     flipCardsOnScroll(){  
         if($(window).scrollTop() >= this.staffCards.offset().top - $(window).height()/3)

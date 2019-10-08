@@ -4,25 +4,28 @@ class SmoothScrolling{
 
  constructor(){
     this.navLink = $('.site-nav__link');
-    this.ScrollOnClick();
+    this.addEvents();
  }
 
- ScrollOnClick(){
-    
-   
-    this.navLink.on('click', function(event){
-
-          event.preventDefault();
-          let linkId = this.id;
-
-
-        $('html, body').animate({ 
-          scrollTop: $('.'+linkId).offset().top
-          }, 500);         
-      
-      }) 
-  }
+ addEvents(){
+  this.navLink.on('click', this.scrollOnClick)
 }
+
+
+  scrollOnClick(event){
+
+    if (this.hash !== "") { 
+      event.preventDefault();
+      let hash = this.hash;
+  
+      $('html, body').animate({ 
+        scrollTop: $(hash).offset().top 
+      }, 800, function(){
+        window.location.hash = hash; 
+      });
+    } 
+  }
+ }
 
 export default SmoothScrolling;
 
