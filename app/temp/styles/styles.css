@@ -643,7 +643,7 @@ img{
         color: #7d7546;
     }
 .headline--white{ 
-        color: #f0eda3;
+        color: #fff;
     }
 .headline--grey{ 
         color: rgba(0,0,0,.7);
@@ -730,8 +730,7 @@ img{
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-attachment: fixed; 
-      opacity: .9;
+      background-attachment: fixed;
     }
 @media (min-width: 576px){
 .header__photo{
@@ -740,7 +739,8 @@ img{
     }
 @media (min-width: 1300px){
 .header__photo{
-        background-image: url('../../assets/images/header-photo-large.jpg')
+        background-image: url('../../assets/images/włosy.jpg')
+        /* background-image: url('../../assets/images/header-photo-large.jpg'); */
     }
     }
 @media (min-width: 1920px){
@@ -757,7 +757,8 @@ img{
     }
 .header__overlay-txt-top{
       font-size: 3.5rem;
-      font-family: 'Patrick Hand', cursive; 
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700; 
       text-shadow: 1px 2px 2px rgba(0,0,0,.7);
    }
 @media (min-width: 768px){
@@ -767,7 +768,8 @@ img{
     }
 @media (min-width: 1300px){
 .header__overlay-txt-top{  
-        font-size: 4.875rem
+        font-size: 4rem;
+        text-transform:
    }
     }
 .header__overlay-txt-bottom{
@@ -789,10 +791,11 @@ img{
  right: -100%;
  z-index: 5;
  transition: all .3s ease-out;
+ color: rgba(255,255,255,.5);  
 }
 @media (min-width: 768px){
 .site-nav{
-        right: 0
+        right: 0  
 }
     }
 .site-nav--is-visible{
@@ -805,7 +808,9 @@ img{
     }
 @media (min-width: 768px){
 .site-nav__content{
-            background-color: rgba(255,255,255,.7);
+           
+            background-color: rgba(0,0,0,.5);
+            /* background-color: rgba(255,255,255,.7); */
             padding-bottom: 0;
             box-shadow: none   
     }
@@ -881,7 +886,7 @@ img{
     }  
             
             .site-nav__list--sticky-nav{
-                background-color: rgba(0,0,0,.6);
+                background-color: rgba(0,0,0,.8);
                 color: white;
                 position: fixed;
                 top: 0;
@@ -907,11 +912,12 @@ img{
     }
 .site-nav__link{
         position: relative;
-        color: #000;
+        color: #fff;
         text-decoration: none;   
         border-bottom: 1px solid #7d7546;
         padding-bottom: 5px;
-        display: block;    
+        display: block;
+    
     }
 .site-nav__link--white{
             color: #fff;
@@ -919,31 +925,33 @@ img{
 @media (min-width: 768px){
 .site-nav__link{
             border-bottom: none;
-            padding-bottom: auto    
+            padding-bottom: auto
+    
     }
     }
-.site-nav__link--gold{
+.site-nav__link--active{
         color: #7d7546; 
-        }
-.site-nav__link::before{
-        content: "";
-        position: absolute;
-        height: 1.5px;
-        width: 0;
-        background: #7d7546;
-        left: -10%;
-        top: 50%;
-        transform: translateY(-50%);
-        transform-origin: 0 0;
-        transition: all .2s ease-out;
         }
 .site-nav__link:hover{
             color: #7d7546;     
         }
-@media (min-width: 768px){
-            .site-nav__link:hover:before{
-                width: 120%;
-            }
+@media (min-width: 768px){  
+                .site-nav__link.site-nav__link--before-medium:before{
+                    content: "";
+                    position: absolute;
+                    height: 1.5px;
+                    width: 0%;
+                    background: #7d7546;
+                    left: -10%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transform-origin: 0 0;
+                    transition: all .2s ease-out;            
+                }
+
+                .site-nav__link.site-nav__link--before-medium:hover:before{
+                    width: 120%;
+                }
     }
 /* .test{
     clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);

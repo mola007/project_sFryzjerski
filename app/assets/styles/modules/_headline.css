@@ -37,7 +37,7 @@
     }
 
     &--white{ 
-        color: $yellow;
+        color: #fff;
     }
 
     &--grey{ 
