@@ -23,7 +23,7 @@ watch('./app/index.html', function(){
 
 //zapoczątkuj css  
  watch('./app/assets/styles/**/*.css', 
-  gulp.series('styles', 'cssInject')
+  gulp.series('modernizr','styles', 'cssInject')
  );
 
 //zapoczątkuj js

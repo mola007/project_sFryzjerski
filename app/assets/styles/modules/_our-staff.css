@@ -16,7 +16,7 @@
     &__card-wrapper{ 
         margin: 0px -18px 40px -18px;
         padding: 1px 0;    
-       background-color: #fff;
+       background-color: #fff; 
 
          @mixin atLarge{
             background-color: transparent;
@@ -28,7 +28,7 @@
     } 
 
     &__card{   
-      
+         
         @mixin atLarge{
             background: $blue;
             position: absolute;
@@ -39,7 +39,7 @@
             box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;  
             margin: auto;
 
-            &--flip-card{
+            .preserve3d &--flip-card{
                 transform: rotateY(-180deg);
             } 
         }
@@ -56,7 +56,7 @@
         }
     }
 
-    &__txt{
+     &__txt{
         line-height: 1.2;
         text-align: center;
         color: black;
@@ -78,8 +78,9 @@
     }
 
     &__thefront{
-
+        
         @mixin atLarge{
+            background: $blue;
             position: absolute;
             top: 0;
             left: 0;
@@ -87,7 +88,11 @@
             bottom: 0;
             backface-visibility: hidden;
             transform-style: preserve-3d; 
-            transform: rotateY(-180deg);
+            z-index: 1;    
+            
+            .preserve3d &{
+                transform: rotateY(-180deg); 
+            }
         }
     }
 
@@ -102,7 +107,7 @@
             right: 0;
             bottom: 0;
             backface-visibility: hidden;
-            transform-style: preserve-3d;  
+           transform-style: preserve-3d;
         }
 
         &::before{
@@ -117,14 +122,17 @@
         }
     }  
 
-    &__theback-logo{
+    &__theback-logo{   
         position: absolute;
+        z-index: -1; 
         width: 70%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
+
+
 
 
 

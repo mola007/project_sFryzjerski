@@ -56,7 +56,6 @@
     &__img-wrapper{
            
         @mixin atMedium{   
-            margin: 0 auto;
             max-width: 80%;    
         }
         @mixin atLarge{   
@@ -68,8 +67,8 @@
             
         &:nth-child(2){
             display: none;
-            margin-top: 10%;
-            margin-left: -50%;
+             margin-top: 10%;
+            margin-left: -20%; 
           
             @mixin atExtraLarge{
                 max-width: 45%;
@@ -77,6 +76,8 @@
             }
        }     
     }
+
+   
 
     img{  
         @mixin atLarge{
