@@ -1,19 +1,12 @@
-/* .test{
-    clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
-} */
 
 .about-us{
-
     background-color: $gold;
-    clip-path: 'polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%)';
+    clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
     margin-top: -5vw;  
     position: relative;
     text-align: center;
      z-index: 1;
-
-    /* site-section--double-padding-at-top-from-large */
-
-     
+  
    &::before{
        content: "";
        position: absolute;
@@ -28,18 +21,16 @@
 
    &__headline{
 
-    &:after{
-        content: "";
-        display:block;
-        height: 2px;
-        width: 20%;
-        background: $gold;
-        margin: 0 auto;
-        margin-top: 10px;    
-    }
-
+    @mixin atMedium{
+        &:after{
+            content: "";
+            display:block;
+            height: 2px;
+            width: 20%;
+            background: $gold;
+            margin: 0 auto;
+            margin-top: 10px;    
+        } 
+      }
    }
-
-  
-
 }

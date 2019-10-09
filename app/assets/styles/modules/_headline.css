@@ -5,12 +5,17 @@
         font-weight: 300;
     }
 
+    &--700{
+        font-weight: 700;
+    }
+    &--shadow{
+        text-shadow: 1px 2px 2px rgba(0,0,0,.2);
+    }
     &--inline-block{
         display: inline-block;
     }
-
-    &--shadow{
-        text-shadow: 1px 2px 2px rgba(0,0,0,.2);
+    &--font-32px{
+        font-size: 2rem;
     }
 
     &--center{
@@ -20,9 +25,7 @@
         font-size: 1.375rem;
     }
 
-    &--font-32px{
-        font-size: 2rem;
-    }
+   
 
     &--font-36px{
         font-size: 2.25rem;

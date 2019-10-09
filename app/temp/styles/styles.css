@@ -528,8 +528,23 @@ img{
         padding-bottom: 0;
      }
 .wrapper{
-    padding: 0 1.25rem;    
+    padding: 0 1.25rem;
+    margin: 0 auto;
+
+   
+   
+        
 }
+@media (min-width: 992px){
+.wrapper--width-80vw-large{
+            max-width: 80vw
+    }
+    }
+@media (min-width: 1300px){
+.wrapper--width-80vw-extraLarge{
+           max-width: 80vw
+    }
+    }
 .wrapper--no-padding-x{
         padding: 0 0;
     }
@@ -538,22 +553,7 @@ img{
     }
 .wrapper--width-80vw{
         max-width: 80vw;
-        margin: 0 auto;
-    }
-@media (min-width: 992px){
-
-        
-
-        .wrapper--width-atLarge-80vw{
-            max-width: 80vw;
-            margin: 0 auto;
-        }
-    }
-@media (min-width: 1300px){
-        .wrapper--width-extraLarge-80vw{
-            max-width: 80vw;
-            margin: 0 auto;
-        }
+       
     }
 .row{
 
@@ -618,20 +618,23 @@ img{
 .headline--300{
         font-weight: 300;
     }
-.headline--inline-block{
-        display: inline-block;
+.headline--700{
+        font-weight: 700;
     }
 .headline--shadow{
         text-shadow: 1px 2px 2px rgba(0,0,0,.2);
+    }
+.headline--inline-block{
+        display: inline-block;
+    }
+.headline--font-32px{
+        font-size: 2rem;
     }
 .headline--center{
         text-align: center;
     }
 .headline--font-22px{
         font-size: 1.375rem;
-    }
-.headline--font-32px{
-        font-size: 2rem;
     }
 .headline--font-36px{
         font-size: 2.25rem;
@@ -725,7 +728,7 @@ img{
           box-shadow: none;
        }
 .header__photo{
-      height: 90vh;
+      height: 70vh;
       background-image: url('../../assets/images/header-photo-small.jpg');
       background-repeat: no-repeat;
       background-size: cover;
@@ -737,10 +740,14 @@ img{
         background-image: url('../../assets/images/header-photo-medium.jpg')
     }
     }
+@media (min-width: 768px){
+.header__photo{
+        height: 90vh
+    }
+    }
 @media (min-width: 1300px){
 .header__photo{
-        background-image: url('../../assets/images/włosy.jpg')
-        /* background-image: url('../../assets/images/header-photo-large.jpg'); */
+        background-image: url('../../assets/images/header-photo-large.jpg')
     }
     }
 @media (min-width: 1920px){
@@ -753,33 +760,42 @@ img{
       width: 100%;
       text-align: center;
       top: 50%;
-      transform: translateY(-50%);  
+      transform: translateY(-50%);
     }
-.header__overlay-txt-top{
-      font-size: 3.5rem;
+@media (min-width: 1300px){
+.header__txt-overlay{
+        text-align: left;
+        left: 5%
+    }
+    }
+.header__txt-top{
       font-family: 'Raleway', sans-serif;
-      font-weight: 700; 
+      font-size: 2.8rem;
       text-shadow: 1px 2px 2px rgba(0,0,0,.7);
    }
 @media (min-width: 768px){
-.header__overlay-txt-top{
-        font-size: 4.5rem
+.header__txt-top{
+        font-size: 3rem
    }
     }
 @media (min-width: 1300px){
-.header__overlay-txt-top{  
-        font-size: 4rem
+.header__txt-top{  
+        font-size: 3.5rem
    }
     }
-.header__overlay-txt-bottom{
+.header__txt-bottom{
       font-size: 1.5rem;
+      font-weight: 400;
       margin-top: 5px;
-      color: #fff;
-      text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+      color: rgb(0,0,0);
    }
+.header__txt-bottom span{
+        color: #7d7546;
+        text-shadow: 1px 2px 2px rgba(0,0,0,.4);
+      }
 @media (min-width: 768px){
-.header__overlay-txt-bottom{
-        font-size: 2rem
+.header__txt-bottom{
+        font-size: 1.8rem
    }
     }
 .site-nav{
@@ -953,23 +969,15 @@ img{
                     width: 120%;
                 }
     }
-/* .test{
-    clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
-} */
 .about-us{
-
     background-color: #7d7546;
-    -webkit-clip-path: 'polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%)';
-            clip-path: 'polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%)';
+    -webkit-clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
     margin-top: -5vw;  
     position: relative;
     text-align: center;
      z-index: 1;
-
-  
-
 }
-/* site-section--double-padding-at-top-from-large */
 .about-us::before{
        content: "";
        position: absolute;
@@ -982,14 +990,16 @@ img{
        -webkit-clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
                clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
    }
-.about-us__headline:after{
-        content: "";
-        display:block;
-        height: 2px;
-        width: 20%;
-        background: #7d7546;
-        margin: 0 auto;
-        margin-top: 10px;    
+@media (min-width: 768px){
+        .about-us__headline:after{
+            content: "";
+            display:block;
+            height: 2px;
+            width: 20%;
+            background: #7d7546;
+            margin: 0 auto;
+            margin-top: 10px;    
+        }
     }
 .offer{
     font-size: 1.25rem;
@@ -1187,19 +1197,16 @@ img{
             background-attachment: fixed;       
         }
     }
-.our-staff__card-wrapper{ 
-        margin: 0px -18px 40px -18px;
-        padding: 1px 0;    
-       background-color: #fff;
-    }
 @media (min-width: 992px){
 .our-staff__card-wrapper{
-            background-color: transparent;
             position: relative;
-            min-height: 440px;
+            min-height: 440px
              /* perspective:800px;  */
-            margin: auto
     }
+    }
+.our-staff__card{  
+        background-color: #fff; 
+        margin: 0px -1.25rem 2.5rem -1.25rem;
     }
 @media (min-width: 992px){
 .our-staff__card{
@@ -1209,10 +1216,8 @@ img{
             height: 100%;
             transform-style: preserve-3d;
             transition: all 1.3s ease-out;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px;  
+            box-shadow:0px 2px 4px rgba(0, 0, 0, 0.3);  
             margin: auto
-
-  
     }
 
             .preserve3d .our-staff__card--flip-card{
@@ -1231,19 +1236,24 @@ img{
 .our-staff__txt{
         line-height: 1.2;
         text-align: center;
-        color: black;
+        padding: 1.25rem;
     }
 @media (min-width: 992px){
 .our-staff__txt{   
             transform: translateZ(2rem);
-            text-indent: 30px; 
             font-size: 1.1rem
     }
     }
 @media (min-width: 768px){
 .our-staff__staff-img{   
             margin: 0 auto;
-            max-width: 70vw
+            width: 70%
+    
+    }
+    }
+@media (min-width: 992px){
+.our-staff__staff-img{   
+            width: 100%
     
     }
     }

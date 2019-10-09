@@ -1,6 +1,17 @@
 .wrapper{
     padding: 0 1.25rem;
+    margin: 0 auto;
 
+    &--width-80vw-large{
+        @mixin atLarge{
+            max-width: 80vw;
+        }
+    }
+    &--width-80vw-extraLarge{
+        @mixin atExtraLarge{
+           max-width: 80vw;
+        }
+    }
     &--no-padding-x{
         padding: 0 0;
     }
@@ -11,25 +22,12 @@
 
     &--width-80vw{
         max-width: 80vw;
-        margin: 0 auto;
+       
     }
 
-    @mixin atLarge{
-
-        
-
-        &--width-atLarge-80vw{
-            max-width: 80vw;
-            margin: 0 auto;
-        }
-    }
    
-    @mixin atExtraLarge{
-        &--width-extraLarge-80vw{
-            max-width: 80vw;
-            margin: 0 auto;
-        }
-    }    
+   
+        
 }   
 
     
