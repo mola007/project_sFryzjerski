@@ -679,7 +679,7 @@ img{
       background-image: url('../../assets/images/header-photo-small.jpg');
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: center bottom;
       background-attachment: fixed;
     }
 @media (min-width: 576px){
