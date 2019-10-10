@@ -20,7 +20,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         transform: translateX(-100%);
         transition: all .5s ease-in;
         opacity: 0;
@@ -32,13 +31,13 @@
 
         @mixin atLarge{   
             padding:  3.125rem 1.125rem;
+         
         }
     }
  
     &__right{
         background-color: $blue;
         padding: 1rem 1.125rem; 
-
         transform: translateX(100%);
         transition: all .5s ease-in;
         opacity: 0;
@@ -46,10 +45,10 @@
         &--show{
             transform: translateX(0%); 
             opacity: 1;
-        }
+        } 
 
         @mixin atLarge{   
-            padding:  3.125rem 1.125rem;
+            padding:  3.125rem 1.125rem;    
         }
     }
 

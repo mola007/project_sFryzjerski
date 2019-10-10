@@ -1,8 +1,8 @@
 .header{
 
     position: relative;
-  
-    &__menu-icon{
+
+     &__menu-icon{
       display: block;
       width: 30px;
       height: 18px;

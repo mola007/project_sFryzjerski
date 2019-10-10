@@ -6,13 +6,14 @@
  top: 0;    
  right: -100%;
  z-index: 5;
- transition: all .3s ease-out;
+ transition: all .3s ease-out; 
 
 
-    @mixin atMedium{
+     @mixin atMedium{
         right: 0;
         color: rgba(255,255,255,.5);
     }
+
     &--is-visible{
         right: 0;
     }

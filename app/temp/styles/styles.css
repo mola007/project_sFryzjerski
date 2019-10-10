@@ -468,11 +468,11 @@ template {
 * {
     box-sizing: border-box;
     }
+html, body {
+        overflow-x:hidden; 
+      }
 body{
-
     font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-
 }
 p{
     font-weight: 300;
@@ -978,7 +978,6 @@ img{
         display: flex;
         justify-content: center;
         align-items: center;
-
         transform: translateX(-100%);
         transition: all .5s ease-in;
         opacity: 0;
@@ -995,7 +994,6 @@ img{
 .offer__right{
         background-color: #f8f4fc;
         padding: 1rem 1.125rem; 
-
         transform: translateX(100%);
         transition: all .5s ease-in;
         opacity: 0;
