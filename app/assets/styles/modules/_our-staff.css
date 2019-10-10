@@ -1,6 +1,8 @@
 .our-staff{
-    margin-top: -2px;
+    margin-top: -1px;
+    overflow: hidden;
     position: relative;
+    z-index: 1;
     background: $blue;
  
     @mixin atLarge{
@@ -14,27 +16,32 @@
       }
 
     &__card-wrapper{ 
-
+        margin: 0px -1.25rem 2.5rem -1.25rem;
+        background: #fff; 
+        padding: 1px 0;
+      
          @mixin atLarge{
+            background: transparent; 
             position: relative;
-            min-height: 440px;
+            margin: auto;   
+            min-height: 450px;
              /* perspective:800px;  */   
+         }
+         @mixin atExtraLarger{
+            min-height: 600px;
          }
     } 
 
     &__card{  
-        background-color: #fff; 
-        margin: 0px -1.25rem 2.5rem -1.25rem;
-        
+ 
         @mixin atLarge{
-            background: $blue;
             position: absolute;
             width:100%;
             height: 100%;
             transform-style: preserve-3d;
             transition: all 1.3s ease-out;
-            box-shadow:0px 2px 4px rgba(0, 0, 0, 0.3);  
-            margin: auto;
+            box-shadow:0px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 10;  
 
             .preserve3d &--flip-card{
                 transform: rotateY(-180deg);
@@ -63,7 +70,6 @@
     }
 
     &__staff-img{
-
         @mixin atMedium{   
             margin: 0 auto;
             width: 70%;    
@@ -72,11 +78,10 @@
         @mixin atLarge{   
             width: 100%;    
         }
-    
     }
 
     &__thefront{
-        
+
         @mixin atLarge{
             background: $blue;
             position: absolute;
@@ -98,6 +103,7 @@
         display: none;
 
         @mixin atLarge{
+            background: $blue;
             display: block;
             position: absolute;
             top: 0;

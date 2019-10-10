@@ -472,6 +472,7 @@ body{
 
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
 }
 p{
     font-weight: 300;
@@ -486,8 +487,8 @@ img{
     display: block;
 }
 .site-section{
-    /* padding: 2.5rem 0; */
     padding: 1rem 0;
+
 }
 @media (min-width: 992px){
         .site-section--more-padding-at-top-large{
@@ -496,40 +497,19 @@ img{
 
         .site-section--more-padding-at-bottom-large{
             padding-bottom: 3.125rem; 
+        } 
+
+        .site-section--double-padding-at-top-large{
+            padding-top: 6.25rem;
         }
     }
 .site-section--larger-padding-at-top{
         padding-top: 4.125rem;
     }
-.site-section--more-padding-at-top{
-        padding-top: 3.125rem;
-    }
-.site-section--double-padding-at-top{
-        padding-top: 6.25rem;
-    }
-@media (min-width: 992px){
-.site-section--double-padding-at-top-large{
-        padding-top: 6.25rem
-    }
-    }
-.site-section--more-padding-at-bottom{
-        padding-bottom: 3.125rem;
-    }
-@media (min-width: 768px){
-.site-section--more-padding-at-bottom-from-medium{
-        padding-bottom: 3.125rem
-        
-    }
-    }
-.site-section--no-padding-top{
-       padding-top: 0;
-    }
-.site-section--no-padding-bottom{
-        padding-bottom: 0;
-     }
 .wrapper{
     padding: 0 1.25rem;
     margin: 0 auto;
+
 
    
    
@@ -548,13 +528,6 @@ img{
 .wrapper--no-padding-x{
         padding: 0 0;
     }
-.wrapper--larger-padding-x{
-        padding: 0 3.125rem;
-    }
-.wrapper--width-80vw{
-        max-width: 80vw;
-       
-    }
 .row{
 
     display: flex;
@@ -562,58 +535,31 @@ img{
 }
 .row__col{
          width: 100%;
-         /* @mixin atLarge {
-             &--large-4{
-             width: 33.33%;
-             }
-             &--large-8{
-             width: 66.66%;
-             }
-         }
-         @mixin atExtraLarge {
-             &--extra-large-2{
-             width: 16.66%;
-             }
-         } */
      }
-.row__col--gutters{
-            padding: 0 1.5rem;
-         }
 @media (min-width: 992px){
 
             .row__col--large-gutters{
                 padding: 0 1.5rem;
              }
-
-            
+ 
             .row__col--large-2{
-            
-                width: 16.66%; 
-                
+                width: 16.66%;    
             }
 
             .row__col--large-4{
                 width: 33.33%;
             }
 
-            .row__col--large-4-calc{
-                
-                width: calc(33.33% - 30px);
+            .row__col--large-6{
+                width: 50%;
             }
 
             .row__col--large-8{
                 width: 66.66%;
             }
-
-             .row__col--large-6{
-             width: 50%;
-             }
     }
 .headline{  
     font-weight: normal;
-
-
-   
 }
 .headline--300{
         font-weight: 300;
@@ -624,23 +570,14 @@ img{
 .headline--shadow{
         text-shadow: 1px 2px 2px rgba(0,0,0,.2);
     }
-.headline--inline-block{
-        display: inline-block;
+.headline--center{
+        text-align: center;
     }
 .headline--font-32px{
         font-size: 2rem;
     }
-.headline--center{
-        text-align: center;
-    }
-.headline--font-22px{
-        font-size: 1.375rem;
-    }
 .headline--font-36px{
         font-size: 2.25rem;
-    }
-.headline--font-75px{
-        font-size: 4.6875rem;
     }
 .headline--gold{
         color: #7d7546;
@@ -825,7 +762,6 @@ img{
 .site-nav__content{
            
             background-color: rgba(0,0,0,.5);
-            /* background-color: rgba(255,255,255,.7); */
             padding-bottom: 0;
             box-shadow: none   
     }
@@ -904,6 +840,7 @@ img{
                 background-color: rgba(0,0,0,.8);
                 color: white;
                 position: fixed;
+                z-index: 10;
                 top: 0;
                 width: 100%;
                 padding: .8rem 0;  
@@ -989,6 +926,9 @@ img{
        background: #fff;
        -webkit-clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
                clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
+   }
+.about-us__headline{
+       display: inline-block;
    }
 @media (min-width: 768px){
         .about-us__headline:after{
@@ -1086,7 +1026,6 @@ img{
 @media (min-width: 992px){
 .offer img{
             box-shadow: 0px 2px 4px rgba(0,0,0,.7)
-
     }
     }
 .offer__list{
@@ -1184,8 +1123,10 @@ img{
     opacity: .8;
 }
 .our-staff{
-    margin-top: -2px;
+    margin-top: -1px;
+    overflow: hidden;
     position: relative;
+    z-index: 1;
     background: #f8f4fc;
 }
 @media (min-width: 992px){
@@ -1197,28 +1138,35 @@ img{
             background-attachment: fixed;       
         }
     }
+.our-staff__card-wrapper{ 
+        margin: 0px -1.25rem 2.5rem -1.25rem;
+        background: #fff; 
+        padding: 1px 0;
+    }
 @media (min-width: 992px){
 .our-staff__card-wrapper{
+            background: transparent; 
             position: relative;
-            min-height: 440px
+            margin: auto;   
+            min-height: 450px
              /* perspective:800px;  */
     }
     }
-.our-staff__card{  
-        background-color: #fff; 
-        margin: 0px -1.25rem 2.5rem -1.25rem;
+@media (min-width: 1700px){
+.our-staff__card-wrapper{
+            min-height: 600px
+    }
     }
 @media (min-width: 992px){
 .our-staff__card{
-            background: #f8f4fc;
             position: absolute;
             width:100%;
             height: 100%;
             transform-style: preserve-3d;
             transition: all 1.3s ease-out;
-            box-shadow:0px 2px 4px rgba(0, 0, 0, 0.3);  
-            margin: auto
-    }
+            box-shadow:0px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 10
+    }  
 
             .preserve3d .our-staff__card--flip-card{
                 transform: rotateY(-180deg);
@@ -1248,13 +1196,11 @@ img{
 .our-staff__staff-img{   
             margin: 0 auto;
             width: 70%
-    
     }
     }
 @media (min-width: 992px){
 .our-staff__staff-img{   
             width: 100%
-    
     }
     }
 @media (min-width: 992px){
@@ -1280,6 +1226,7 @@ img{
     }
 @media (min-width: 992px){
 .our-staff__theback{
+            background: #f8f4fc;
             display: block;
             position: absolute;
             top: 0;

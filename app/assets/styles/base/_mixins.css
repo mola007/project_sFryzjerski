@@ -23,6 +23,14 @@
     }
 }
 
+@define-mixin atExtraLarger {
+    @media (min-width: 1700px){
+        @mixin-content;
+    }
+}
+
+
+
 @define-mixin atHiDpi {
     @media (min-width: 1920px){
         @mixin-content;

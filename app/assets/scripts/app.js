@@ -5,7 +5,6 @@ import MobileMenu from './modules/MobileMenu';
 import SmoothScrolling from './modules/SmoothScrolling';
 import TestForClipPath from './modules/TestForClipPath';
 
-
 const stickyHeader  = new OwlSlider();
 const changeOnScroll = new ChangeOnScroll();
 const mobileMenu = new MobileMenu();
