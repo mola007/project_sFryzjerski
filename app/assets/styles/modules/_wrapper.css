@@ -2,14 +2,14 @@
     padding: 0 1.25rem;
     margin: 0 auto;
 
-    &--width-80vw-large{
+    &--width-1200-large{
         @mixin atLarge{
-            max-width: 80vw;
+            max-width: 1200px;
         }
     }
-    &--width-80vw-extraLarge{
+    &--width-1200-extraLarge{
         @mixin atExtraLarge{
-           max-width: 80vw;
+           max-width: 1200px;
         }
     }
     &--no-padding-x{

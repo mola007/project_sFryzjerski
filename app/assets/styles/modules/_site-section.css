@@ -1,23 +1,35 @@
 .site-section{
-    padding: 1rem 0; 
+    padding: 1rem 0;
 
-    @mixin atLarge{
-        &--more-padding-at-top-large{
+    &--more-padding-at-top{
+        padding-top: 3.125rem;   
+    }
+ 
+    &--more-padding-at-top-large{
+        @mixin atLarge{
             padding-top: 3.125rem; 
-        }
+        }    
+    }
 
-        &--more-padding-at-bottom-large{
+    &--more-padding-at-bottom-large{
+        @mixin atLarge{
             padding-bottom: 3.125rem; 
         } 
-
-        &--double-padding-at-top-large{
-            padding-top: 6.25rem;
-        }
-            
-    }
-
+    } 
+ 
+    
     &--larger-padding-at-top{
         padding-top: 4.125rem;
+        @mixin atLarge{
+            padding-top: 6.250rem; 
+        }
     }
 
+  
+
+    /* @mixin atLarge{
+        padding-top: 4.5rem; 
+    }  */
 }
+
+

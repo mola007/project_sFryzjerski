@@ -40,8 +40,7 @@ class testForClipPath {
     //add classes if browser support clip-path property
     areClipPathShapesSupported(){ 
       if (!this.makeATest()) {  
-         this.aboutUsSection.classList.remove('site-section--double-padding-at-top-large'); 
-         this.aboutUsSection.classList.remove('site-section--larger-padding-at-top');
+         this.aboutUsSection.classList.remove('site-section--larger-padding-at-top'); 
          this.aboutUsSection.classList.add('site-section--more-padding-at-top');
      }
     } 

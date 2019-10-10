@@ -489,22 +489,32 @@ img{
 .site-section{
     padding: 1rem 0;
 
+  
+
+    /* @mixin atLarge{
+        padding-top: 4.5rem; 
+    }  */
 }
+.site-section--more-padding-at-top{
+        padding-top: 3.125rem;   
+    }
 @media (min-width: 992px){
-        .site-section--more-padding-at-top-large{
-            padding-top: 3.125rem; 
-        }
-
-        .site-section--more-padding-at-bottom-large{
-            padding-bottom: 3.125rem; 
-        } 
-
-        .site-section--double-padding-at-top-large{
-            padding-top: 6.25rem;
-        }
+.site-section--more-padding-at-top-large{
+            padding-top: 3.125rem    
+    }
+    }
+@media (min-width: 992px){
+.site-section--more-padding-at-bottom-large{
+            padding-bottom: 3.125rem 
+    }
     }
 .site-section--larger-padding-at-top{
         padding-top: 4.125rem;
+    }
+@media (min-width: 992px){
+.site-section--larger-padding-at-top{
+            padding-top: 6.250rem
+    }
     }
 .wrapper{
     padding: 0 1.25rem;
@@ -516,13 +526,13 @@ img{
         
 }
 @media (min-width: 992px){
-.wrapper--width-80vw-large{
-            max-width: 80vw
+.wrapper--width-1200-large{
+            max-width: 1200px
     }
     }
 @media (min-width: 1300px){
-.wrapper--width-80vw-extraLarge{
-           max-width: 80vw
+.wrapper--width-1200-extraLarge{
+           max-width: 1200px
     }
     }
 .wrapper--no-padding-x{
@@ -907,10 +917,12 @@ img{
                 }
     }
 .about-us{
+   
+    
     background-color: #7d7546;
     -webkit-clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
-    margin-top: -5vw;  
+            clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);  
+     margin-top: -5vw;  
     position: relative;
     text-align: center;
      z-index: 1;
@@ -1123,6 +1135,7 @@ img{
     opacity: .8;
 }
 .our-staff{
+    
     margin-top: -1px;
     overflow: hidden;
     position: relative;
@@ -1148,13 +1161,8 @@ img{
             background: transparent; 
             position: relative;
             margin: auto;   
-            min-height: 450px
+            min-height: 430px
              /* perspective:800px;  */
-    }
-    }
-@media (min-width: 1700px){
-.our-staff__card-wrapper{
-            min-height: 600px
     }
     }
 @media (min-width: 992px){

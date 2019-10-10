@@ -1,8 +1,10 @@
 
 .about-us{
+   
+    
     background-color: $gold;
-    clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%); 
-    margin-top: -5vw;  
+    clip-path: polygon(0 calc(0% + 5vw), 100% 0, 100% 100%, 0% 100%);  
+     margin-top: -5vw;  
     position: relative;
     text-align: center;
      z-index: 1;
